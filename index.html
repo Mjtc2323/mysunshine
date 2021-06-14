@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love you</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1><a href="index2.html">LA AMO <span>MUCHO ❤</span></a></h1>
+    <br>
+    <div class="progressbar">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01">
+                    <div class="step-inner">NOV</div>
+                </li>
+                <li class="step step02 active">
+                    <div class="step-inner">DIC</div>
+                </li>
+                <li class="step step03">
+                    <div class="step-inner">ENE</div>
+                </li>
+                <li class="step step04">
+                    <div class="step-inner">FEB</div>
+                </li>
+                <li class="step step05">
+                    <div class="step-inner">MAR</div>
+                </li>
+                
+                
+            </ul>
+            <div id="line">
+                <div id="line-progress">
+                </div>
+            </div>
+        </div>
+        <div id="adder">
+            <div id="progress-content-section">
+                <div class="section-content NOVEMBER active">
+                    <img src="images/nov.jpeg">
+                    <div class="textfoto">2020 NOVIEMBRE, LA PRIMERA, NO ES LA MEJOR PERO VALE MUCHO ❤</div>
+                </div>
+                <div class="section-content DECEMBER">
+                    <img src="images/dic.jpeg" >
+                    <div class="textfoto">2020 DICIEMBRE, ADORO SUS CARICIAS ❤</div>
+                </div>
+                <div class="section-content JANUARI">
+                    <video src="images/ene.mp4" autoplay muted loop width="90%" height="250px"></video>
+                    <div class="textfoto">2021 ENERO, SOY FELIZ CON USTED ❤</div>
+                </div>
+                <div class="section-content FEBRUARI">
+                    <img src="images/feb.jpeg">
+                    <div class="textfoto">2021 FEBRERO, COMO NO AMARLA SI ESTA HECHA PERFECTAMENTE PARA MI ❤</div>
+                </div>
+                <div class="section-content MAART">
+                    <video src="images/marzo.mp4" autoplay muted loop width="90%" height="250px"></video>
+                    <div class="textfoto">2021 MARZO, SABE QUE AMO ESE VIDEO!, ADORO QUE ME CUIDE EN LAS PEDAS, ES PERFECTA ❤</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <div class="footer">
+                <h3><a href="index2.html">OTROS <span>MESES</span></a></h3>
+            </div>
+        </footer>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+$(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".NOVEMBER").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".DECEMBER").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".JANUARI").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".FEBRUARI").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".MAART").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
+</body>
+</html>
